@@ -13,13 +13,13 @@ class CreateDetailtransactionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('detailtransactions', function (Blueprint $table) {
-            $table->id();
-            $table->foreign('id_transaksi')->references('id')->on('transactions');
-            $table->foreign('id_sparepart')->references('id')->on('spareparts');
-            $table->integer('jumlah');
-            $table->timestamps();
-        });
+        //Schema::create('detailtransactions', function (Blueprint $table) {
+        //    $table->id();
+        //    $table->foreign('id_transaksi')->references('id')->on('transactions');
+        //    $table->foreign('id_sparepart')->references('id')->on('spareparts');
+        //    $table->integer('jumlah');
+        //    $table->timestamps();
+        //});
     }
 
     /**
