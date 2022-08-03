@@ -9,5 +9,5 @@ Webservice using Laravel 8 and JWT
 5. Semua API menggunakan middleware auth jwt
 
 ## Run once
-composer install
-php artisan migrate
+1. composer install
+2. php artisan migrate
