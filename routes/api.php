@@ -26,4 +26,5 @@ Route::group(['middleware' => 'api'], function($router) {
     Route::post('/refresh', [JWTController::class, 'refresh']);
     Route::post('/profile', [JWTController::class, 'profile']);
     Route::get('/users', [JWTController::class, 'users']);
+    Route::get('/spareparts', [JWTController::class, 'spareparts']);
 });
