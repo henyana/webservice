@@ -7,3 +7,7 @@ Webservice using Laravel 8 and JWT
 3. API get User
 4. API get Spareparts
 5. Semua API menggunakan middleware auth jwt
+
+## Run once
+composer install
+php artisan migrate
