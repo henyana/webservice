@@ -120,7 +120,17 @@ class JWTController extends Controller
      */
     public function users()
     {
-        return response()->json(auth()->user());
+        return response()->json(User::all());
+    }
+    
+     /**
+     * Get spareparts.
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function spareparts()
+    {
+        return response()->json(Sparepart::all());
     }
 
     /**
