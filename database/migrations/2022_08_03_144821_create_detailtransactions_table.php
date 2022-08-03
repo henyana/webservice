@@ -17,7 +17,7 @@ class CreateDetailtransactionsTable extends Migration
             $table->id();
             $table->foreign('id_transaksi')->references('id')->on('transactions');
             $table->foreign('id_sparepart')->references('id')->on('spareparts');
-            $table->integer('jumlah')
+            $table->integer('jumlah');
             $table->timestamps();
         });
     }
