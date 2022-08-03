@@ -13,13 +13,13 @@ class CreateTransactionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('transactions', function (Blueprint $table) {
-            $table->id();
-            $table->integer('no_transaksi')->unique();
-            $table->string('nama_pemohon');
-            $table->foreign('id_user')->references('id')->on('users');
-            $table->timestamps();
-        });
+        //Schema::create('transactions', function (Blueprint $table) {
+        //    $table->id();
+        //    $table->integer('no_transaksi')->unique();
+        //    $table->string('nama_pemohon');
+        //    $table->foreign('id_user')->references('id')->on('users');
+        //    $table->timestamps();
+        //});
     }
 
     /**
