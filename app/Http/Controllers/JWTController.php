@@ -136,7 +136,7 @@ class JWTController extends Controller
     }
 
     /**
-     * Get spareparts.
+     * Get transactions.
      *
      * @return \Illuminate\Http\JsonResponse
      */
