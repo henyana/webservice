@@ -17,6 +17,10 @@ class Transaction extends Model
     protected $fillable = [
         'no_transaksi',
         'nama_pemohon',
-        'id_user',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class,'id_user');
+    }
 }

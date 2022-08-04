@@ -15,8 +15,19 @@ class DetailTransaction extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'id_transaksi',
-        'id_sparepart',
         'jumlah',
     ];
+
+    protected $table = 'detail_transactions';
+
+    public function transaction()
+    {
+        return $this->belongsTo(Transaction::class,'id_transaksi');
+    }
+
+    public function sparepart()
+    {
+        return $this->belongsTo(Sparepart::class,'id_sparepart');
+    }
+
 }

@@ -8,6 +8,8 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Models\Sparepart;
+use App\Models\Transaction;
+use App\Models\DetailTransaction;
 
 class JWTController extends Controller
 {
@@ -131,6 +133,16 @@ class JWTController extends Controller
     public function spareparts()
     {
         return response()->json(Sparepart::all());
+    }
+
+    /**
+     * Get spareparts.
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function transactions()
+    {
+        return response()->json(Transaction::with(['user'])->get());
     }
 
     /**
